@@ -27,7 +27,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'django-restaurant-app-mtb84.herokuapp.com/'
+    'django-restaurant-app-mtb84.herokuapp.com'
 ]
 
 
