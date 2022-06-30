@@ -3,7 +3,7 @@ from .models import Menu
 from .serializer import MenuSerializer
 
 class MenuListAPIView(generics.ListAPIView):
-    queryset = Menu.objects.filter(active=True)
+    queryset = Menu.objects.all()
     serializer_class = MenuSerializer 
 
 
