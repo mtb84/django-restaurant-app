@@ -27,6 +27,8 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
     'django-restaurant-app-mtb84.herokuapp.com',
     '127.0.0.1',
 ]
@@ -139,4 +141,5 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
+REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend/react-restaurant-app')
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'frontend/react-restaurant-app/build/static'),)
