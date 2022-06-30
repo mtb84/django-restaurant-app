@@ -27,7 +27,8 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'django-restaurant-app-mtb84.herokuapp.com'
+    'django-restaurant-app-mtb84.herokuapp.com',
+    '127.0.0.1',
 ]
 
 
@@ -45,8 +46,11 @@ INSTALLED_APPS = [
     # 3rd party
     'rest_framework',
 
-    #local
+    #local  
+    'api.apps.ApiConfig',
+    'frontend.apps.FrontendConfig',
     'menu.apps.MenuConfig',
+    'orders.apps.OrdersConfig',
 ]
 
 MIDDLEWARE = [
